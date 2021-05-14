@@ -28,8 +28,6 @@ def test_type(user_input):
 
 
 if __name__ == '__main__':
-    ## UnitTest Module
-    unittest.main()
 
-    ## PyTest Module
+
     test_type(user_input)
