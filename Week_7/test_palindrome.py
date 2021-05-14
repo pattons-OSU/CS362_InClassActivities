@@ -18,7 +18,14 @@ import unittest
 import palindrome
 
 class testCaseVolume(unittest.TestCase):
-    pass
+    
+##Testing pass and fail of the input type
+    ## Testing to see if the input is a type value of "string"
+    def test_type(self):
+      self.assertTrue(type(palindrome.user_input) is str)
+    ## This test should fail as the input type IS string
+    def test_type_fail(self):
+      self.assertTrue(type(palindrome.user_input) is not str)
 
 if __name__ == '__main__':
     unittest.main()
