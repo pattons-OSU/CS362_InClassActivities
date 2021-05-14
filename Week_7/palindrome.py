@@ -15,21 +15,25 @@ Palindrome -    1. Ask the user for a string and determine whether it is a palin
 """
 
 def user_input():
+    ## Taking in user input and returning string value
     usr_input = input("\nPlease enter a word or string to check:\n")
     return usr_input
 
-##string = user_input()
 
 def pal_check(string):
+    ## Taking in "usr_input" as a parameter and checking a boolean return
+    ## if the original string is the same as the string in reverse
     return string == string[::-1]
 
 
 
 if __name__ == "__main__":
+
+    ## Driver code
     string = user_input()
     ans = pal_check(string)
 
     if ans:
-        print("yes")
+        print(f"\nYour input of {string} is a palendrome.\n")
     else:
-        print("no") 
+        print(f"\nYour input of {string} is NOT a palendrome.\n") 
