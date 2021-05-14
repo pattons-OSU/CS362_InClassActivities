@@ -17,8 +17,9 @@ Palindrome -    1. Ask the user for a string and determine whether it is a palin
 import unittest
 import palindrome
 
+## UnitTest Module
 class testCaseVolume(unittest.TestCase):
-    
+##Unit Test  
 ##Testing pass and fail of the input type
     ## Testing to see if the input is a type value of "string"
     def test_type(self):
@@ -27,5 +28,18 @@ class testCaseVolume(unittest.TestCase):
     def test_type_fail(self):
       self.assertTrue(type(palindrome.user_input) is not str)
 
+##___________________________________________________
+##PyTest Module
+##user_input = palindrome.user_input()
+user_input = "hello world"
+
+def test_type(user_input):
+    assert type(user_input) is str
+
+
 if __name__ == '__main__':
-    unittest.main()
+    ## UnitTest Module
+    ##unittest.main()
+
+    ## PyTest Module
+    test_type(user_input)
