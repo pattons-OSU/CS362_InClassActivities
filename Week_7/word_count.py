@@ -15,10 +15,19 @@ Word Count-
         from unittest and pytest)    
 
 """
+
 def user_input():
-    ## Taking in user input and returning string value
+    ## Taking in user input and returning it for use
     usr_input = input("\nPlease enter a sentence to count:\n")
     return usr_input
 
+def string_split(string):
+    ## Breaking user input into separate items and then counting them
+    separate = string.split()
+    count = len(separate)
+    print(f"\nOutput - {count}\n")
+    return count
+
 if __name__ == "__main__":
-    pass
+    string = user_input()
+    string_split(string)
