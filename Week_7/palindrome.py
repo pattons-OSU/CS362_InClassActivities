@@ -34,6 +34,6 @@ if __name__ == "__main__":
     ans = pal_check(string)
 
     if ans:
-        print(f"\nYour input of {string} is a palendrome.\n")
+        print(f"\nYour input of '{string}' is a palendrome.\n")
     else:
-        print(f"\nYour input of {string} is NOT a palendrome.\n") 
+        print(f"\nYour input of '{string}' is NOT a palendrome.\n") 
