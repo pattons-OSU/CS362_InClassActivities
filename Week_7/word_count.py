@@ -15,3 +15,10 @@ Word Count-
         from unittest and pytest)    
 
 """
+def user_input():
+    ## Taking in user input and returning string value
+    usr_input = input("\nPlease enter a sentence to count:\n")
+    return usr_input
+
+if __name__ == "__main__":
+    pass
