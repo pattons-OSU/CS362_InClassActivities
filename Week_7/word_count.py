@@ -1,5 +1,4 @@
 #! python3
-
 """
 Simeon Patton
 Inclass activity Week 7
@@ -13,7 +12,6 @@ Word Count-
         pytest.
         3. Document the outputs in a pdf - (screenshots of the output
         from unittest and pytest)    
-
 """
 
 def user_input():

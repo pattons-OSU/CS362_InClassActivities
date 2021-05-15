@@ -9,7 +9,6 @@ Palindrome -    1. Ask the user for a string and determine whether it is a palin
                 3. Document the outputs in a pdf - (screenshots of the output from unittest and pytest)
 
     Some code inspiration from www.shorturl.at/eglJ6
-    
 """
 import palindrome
 import pytest
