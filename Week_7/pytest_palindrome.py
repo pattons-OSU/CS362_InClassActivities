@@ -15,19 +15,27 @@ Palindrome -    1. Ask the user for a string and determine whether it is a palin
 
 """
 import palindrome
+import pytest
 
-user_input = "hello world"
+## Had to hard code a user input here because the "fixture"
+## was not found otherwise. Hardcode suggested for final draft
+## by TA Raghuram
+
+@pytest.fixture
+def user_input():
+    return "hello world"
 
 
 ##PyTest Module
 ##user_input = palindrome.user_input()
 
-
+## Pytest, testing to see if user input is a string and not another data type
 def test_type(user_input):
+    user_input = "hello world"
     assert type(user_input) is str
 
 
 if __name__ == '__main__':
-
+    user_input = "hello world"
 
     test_type(user_input)
