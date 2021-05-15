@@ -1,5 +1,4 @@
 #! python3
-
 """
 Simeon Patton
 Inclass activity Week 7
@@ -12,7 +11,6 @@ Palindrome -    1. Ask the user for a string and determine whether it is a palin
 
     Some code inspiration from www.shorturl.at/eglJ6
     
-
 """
 import palindrome
 import pytest
@@ -25,7 +23,6 @@ import pytest
 def user_input():
     return "hello world"
 
-
 ##PyTest Module
 ##user_input = palindrome.user_input()
 
@@ -33,7 +30,6 @@ def user_input():
 def test_type(user_input):
     user_input = "hello world"
     assert type(user_input) is str
-
 
 if __name__ == '__main__':
     user_input = "hello world"
