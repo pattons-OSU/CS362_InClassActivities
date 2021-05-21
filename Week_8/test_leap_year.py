@@ -15,11 +15,12 @@ Apply the following steps to the leap year code in Homework - 1
 
 import unittest
 import leap_year
+user_input = leap_year.user_input()
 
 class testCaseVolume(unittest.TestCase):
     ## this test should pass, testing the actual arithmetic of the function
     def test_data_type(self):
-        self.assertTrue(type(leap_year.user_input) is int)
+        self.assertTrue(type(user_input) is int)
 
 
 if __name__ == '__main__':
