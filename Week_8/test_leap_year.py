@@ -19,7 +19,7 @@ import leap_year
 class testCaseVolume(unittest.TestCase):
     ## this test should pass, testing the actual arithmetic of the function
     def test_data_type(self):
-        self.assertTrue(type(in_year) is int)
+        self.assertTrue(type(leap_year.user_input) is int)
 
 
 if __name__ == '__main__':
